@@ -58,9 +58,9 @@ passport.use(new LinkedinStrategy({
     passReqToCallback: true,
 }, (request, accessToken, refreshToken, profile, done) => {
     // console.log("request", request)
-    console.log("profile", profile)
-    console.log("accessToken", accessToken)
-    console.log("refreshToken", refreshToken)
+    // console.log("profile", profile)
+    // console.log("accessToken", accessToken)
+    // console.log("refreshToken", refreshToken)
     done(null, profile)
 }));
 
