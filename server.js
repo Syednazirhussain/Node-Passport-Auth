@@ -42,7 +42,6 @@ app.get('/failed', (req, res) => res.send('You Failed to log in!'))
 
 app.get('/dashboard', isLoggedIn, (req, res) => {
     console.log("user", req.user)
-
     let payload = {
         name: req.user.displayName,
         email: req.user.emails[0].value,

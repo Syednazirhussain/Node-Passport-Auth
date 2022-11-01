@@ -30,9 +30,9 @@ passport.use(new GoogleStrategy({
 }, (request, accessToken, refreshToken, profile, done) => {
     // console.log("Request Method", request.method)
     // console.log("Request URL", request.url)
-    console.log("profile", profile)
-    console.log("Access Token: ", accessToken)
-    console.log("refreshToken", refreshToken)
+    // console.log("profile", profile)
+    // console.log("Access Token: ", accessToken)
+    // console.log("refreshToken", refreshToken)
     done(null, profile)
 }));
 
@@ -44,9 +44,9 @@ passport.use(new FacebookStrategy({
     profileFields: ['id', 'displayName', 'name', 'gender', 'picture.type(large)','email']
 }, (token, refreshToken, profile, done) => {
     // facebook will send back the token and profile
-    console.log("token", token)
-    console.log("profile", profile)
-    console.log("refreshToken", refreshToken)
+    // console.log("token", token)
+    // console.log("profile", profile)
+    // console.log("refreshToken", refreshToken)
     return done(null,profile)
 }));
 
