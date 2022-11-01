@@ -11,7 +11,7 @@ passport.serializeUser(function(user, done) {
     PS: You dont have to do it like this its just usually done like this
     */
     done(null, user);
-  });
+});
   
 passport.deserializeUser(function(user, done) {
     /*
